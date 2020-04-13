@@ -1,0 +1,17 @@
+.wrap{
+    margin:100px auto;
+    max-width:99%;
+}
+.img{
+    position:relative;
+    top:60px;
+    opacity:0;
+    transition:all 1s ease;
+}
+.fade-in{
+    opacity:1;
+    top:0;
+}
+.mt-100{
+    margin-top:100px;
+}
