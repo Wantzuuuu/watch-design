@@ -131,13 +131,13 @@
     <section class="text-white">
         <div class="container-fluid">
             <!-- women watch -->
-            <section class="product-advance">
+            <section class="product-advance z-2">
                 <div class="product-bg-img bg-cover"
                     style="background-image:url('https://images.unsplash.com/photo-1524152119796-e80f031e751b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');">
                 </div>
             </section>
-            <section class="product-advance-content bg-cover">
-                <div class="product-advance-container">
+            <section class="product-advance-content bg-cover z-3">
+                <div class="product-advance-container container-box-shadow">
                     <div class="bg-block"></div>
                     <div class="row justify-content-md-center ">
                         <div class="col-md-6 col-lg-5 mb-5 mb-md-0 order-md-2">
@@ -155,9 +155,9 @@
                     </div>
                 </div>
             </section>
-            <section class="glass-section bg-cover">
+            <section class="glass-section bg-cover z-4">
                 <div class="bg-glass">
-                    <div class="glass-container bg-cover">
+                    <div class="glass-container container-box-shadow bg-cover">
                         <div class="bg-block"></div>
                         <div class="title p-1 d-none d-md-block">
                             01
@@ -178,7 +178,7 @@
                                     <img src="https://images.unsplash.com/photo-1519742866993-66d3cfef4bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=581&q=80"
                                         alt="">
                                 </div>
-                                <div class="item">
+                                <div class="item ">
                                     <div class="item-num">03</div>
                                     <img src="https://images.unsplash.com/photo-1484800089236-7ae8f5dffc8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
                                         alt="">
@@ -194,8 +194,72 @@
                 </div>
             </section>
             <!-- women watch end -->
+
+            <!-- men watch -->
+            <section id="men" class="product-advance  z-5">
+                <div class="product-bg-img bg-cover"
+                    style="background-image:url('https://images.unsplash.com/photo-1507680434567-5739c80be1ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')">
+                </div>
+            </section>
+            <section class="men-content z-6">
+                <div class="men-container">
+                    <div class="bg-block">
+                    </div>
+                    <div class="men-product-description">
+                        <div class="row h-100 align-items-center justify-content-center">
+                            <div class="col-md-6 col-lg-5">
+                                <img width="100%"
+                                    src="https://images.unsplash.com/photo-1552493987-2841b6dd22dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                    alt="">
+                            </div>
+                            <div class="col-md-6 col-lg-5">
+                                <div class="product-text">
+                                    追求成就感，永不褪色的冒險心，成就運動家冒險精神。以高科技的技術開發最值得信賴的運動錶款，發揮專業運動在艱鉅環境下的完美功能。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="men-product-group z-6 bg-cover">
+                <div class="men-product-container">
+                    <div class="bg-block"></div>
+                    <div class="row h-100 justify-content-end" style="position: relative;">
+                        <div class="col-md-7 col-lg-6 mt-100">
+                            <img width="100%" height="450px"
+                                src="https://images.unsplash.com/photo-1507399076055-c021699485c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1566&q=80"
+                                alt="">
+                        </div>
+                        <div class="col-md-6 align-self-start align-self-md-center">
+                            <div class="product-text">
+                                追求成就感，永不褪色的冒險心，成就運動家冒險精神。以高科技的技術開發最值得信賴的運動錶款，發揮專業運動在艱鉅環境下的完美功能。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="row h-100">
+                    <div class="col-md-6">
+                        <div class="test"></div>
+                    </div>
+                </div> -->
+            </section>
+            <!-- men watch end-->
         </div>
     </section>
 </body>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    const target = $(".men-product-group").offset().top;
+    $(window).scroll(() => {
+        let scroll = $(window).scrollTop();
+        if (scroll > (target - 500)) {
+            $("#men").addClass("i-fix");
+        } else {
+            $("#men").removeClass("i-fix");
+        }
+    })
+    console.log(target);
+</script>
 
 </html>

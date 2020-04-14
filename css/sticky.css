@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 .bg-cover {
   background-position: center center;
   background-size: cover; }
@@ -10,6 +13,27 @@
   height: 30px;
   background-color: #242323;
   z-index: 100; }
+
+.container-box-shadow {
+  box-shadow: 10px 10px 10px rgba(36, 36, 35, 0.5); }
+
+.z-2 {
+  z-index: 2; }
+
+.z-3 {
+  z-index: 3; }
+
+.z-4 {
+  z-index: 4; }
+
+.z-5 {
+  z-index: 5; }
+
+.z-6 {
+  z-index: 6; }
+
+.z-7 {
+  z-index: 7; }
 
 .header-img {
   position: relative;
@@ -110,17 +134,25 @@
 .product-advance {
   height: 100vh;
   position: sticky;
-  z-index: 2;
   top: 0; }
   .product-advance .product-bg-img {
-    height: 100%;
-    width: 100%; }
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .7s ease; }
+
+.product-advance.i-fix {
+  overflow: hidden; }
+  .product-advance.i-fix .product-bg-img {
+    filter: blur(10px); }
 
 .product-advance-content {
   background-image: url("https://images.unsplash.com/photo-1530799594-8a82e00a041b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
   position: sticky;
   top: 0;
-  z-index: 3;
   height: 100vh;
   width: 100%;
   background-color: #242323;
@@ -156,11 +188,13 @@
         right: -10px;
         bottom: -10px;
         background-image: url("https://images.unsplash.com/photo-1530799594-8a82e00a041b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+        background-attachment: fixed;
         background-position: center center;
         background-size: cover;
         filter: blur(8px); }
     .product-advance-content .product-advance-container .product-text {
-      font-size: 24px; }
+      font-size: 24px;
+      font-weight: 300; }
     @media (max-width: 576px) {
       .product-advance-content .product-advance-container .product-text {
         font-size: 18px; } }
@@ -174,8 +208,7 @@
     height: 300px; } }
 
 .glass-section {
-  position: relative;
-  z-index: 4;
+  position: sticky;
   top: 0;
   height: 100vh;
   width: 100%;
@@ -272,7 +305,7 @@
 
 @media (max-width: 576px) {
   .glass-section {
-    height: 110vh; }
+    height: 100vh; }
     .glass-section .glass-container {
       padding: 0 10px;
       max-width: 95%;
@@ -290,10 +323,132 @@
       .glass-section .glass-container .product-detail {
         justify-content: center; }
         .glass-section .glass-container .product-detail .item {
-          width: 100%;
+          width: 50%;
           padding: 5% 1%; }
           .glass-section .glass-container .product-detail .item .item-num {
-            bottom: 167px;
+            bottom: 196px;
             left: -12px; }
           .glass-section .glass-container .product-detail .item img {
-            height: 180px; } }
+            height: 200px; } }
+
+.men-product-advance {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: 5; }
+
+.men-content {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  overflow: hidden; }
+  .men-content .men-container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 1128px;
+    height: 600px;
+    border-radius: 15px;
+    padding: 0 20px;
+    overflow: hidden; }
+    .men-content .men-container .bg-block {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background-color: rgba(36, 36, 35, 0.3); }
+      .men-content .men-container .bg-block:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        background-image: url("https://images.unsplash.com/photo-1507680434567-5739c80be1ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        filter: blur(10px); }
+    .men-content .men-container .men-product-description {
+      height: 100%; }
+    .men-content .men-container img {
+      height: 500px; }
+    .men-content .men-container .product-text {
+      font-size: 24px;
+      font-weight: 300; }
+
+@media (max-width: 768px) {
+  .men-content .men-container {
+    max-width: 80%; } }
+
+@media (max-width: 576px) {
+  .men-content .men-container {
+    max-width: 90%;
+    height: auto; } }
+
+.men-product-group {
+  height: 100vh;
+  position: relative; }
+  .men-product-group .men-product-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 80px auto 0 auto;
+    max-width: 1128px;
+    height: 500px;
+    padding: 15px 40px;
+    background-color: rgba(36, 36, 35, 0.5);
+    border-radius: 15px; }
+    .men-product-group .men-product-container .mt-100 {
+      position: absolute;
+      top: 174px;
+      left: -90px; }
+      .men-product-group .men-product-container .mt-100 img {
+        border-radius: 15px; }
+    .men-product-group .men-product-container .product-text {
+      font-size: 24px;
+      font-weight: 300; }
+    .men-product-group .men-product-container .bg-block {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 15px;
+      overflow: hidden; }
+      .men-product-group .men-product-container .bg-block:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("https://images.unsplash.com/photo-1507680434567-5739c80be1ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+        background-size: cover;
+        background-position: center center; }
+
+@media (max-width: 768px) {
+  .men-product-group .men-product-container {
+    max-width: 80%; } }
+
+@media (max-width: 576px) {
+  .men-product-group {
+    margin-top: 150px; }
+    .men-product-group .men-product-container {
+      max-width: 90%;
+      height: auto;
+      margin: 0 auto; }
+      .men-product-group .men-product-container .mt-100 {
+        position: relative;
+        top: 0px;
+        left: 0px; }
+        .men-product-group .men-product-container .mt-100 img {
+          height: 300px; } }
