@@ -332,10 +332,10 @@
           width: 50%;
           padding: 5% 1%; }
           .glass-section .glass-container .product-detail .item .item-num {
-            bottom: 196px;
+            bottom: 176px;
             left: -12px; }
           .glass-section .glass-container .product-detail .item img {
-            height: 200px; } }
+            height: 180px; } }
 
 .men-product-advance {
   height: 100vh;
@@ -396,7 +396,9 @@
 @media (max-width: 576px) {
   .men-content .men-container {
     max-width: 90%;
-    height: auto; } }
+    height: auto; }
+    .men-content .men-container img {
+      height: 300px; } }
 
 .men-product-group {
   height: 100vh;

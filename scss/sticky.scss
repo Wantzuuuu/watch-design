@@ -418,12 +418,12 @@ $second-bg:rgb(36, 35, 35);
                 .item{
                     width:50%;
                     .item-num{
-                        bottom:196px;
+                        bottom:176px;
                         left:-12px;
                     }
                     padding:5% 1%;
                     img{
-                        height:200px
+                        height:180px
                     }
                 }
             }
@@ -501,6 +501,9 @@ $second-bg:rgb(36, 35, 35);
         .men-container{
             max-width: 90%;
             height:auto;
+            img{
+                height:300px; 
+            }
         }
     }
 }
