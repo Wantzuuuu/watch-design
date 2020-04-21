@@ -1,0 +1,79 @@
+/* animate */
+/* scale left */
+.scale-in-hor-left {
+	-webkit-animation: scale-in-hor-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes scale-in-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+  /* scale left end*/
+
+  /* slit */
+  .slit-in-horizontal {
+	-webkit-animation: slit-in-horizontal 0.6s ease-out both;
+	        animation: slit-in-horizontal 0.6s ease-out both;
+}
+ @-webkit-keyframes slit-in-horizontal {
+    0% {
+      -webkit-transform: translateZ(-800px) rotateX(90deg);
+              transform: translateZ(-800px) rotateX(90deg);
+      opacity: 0;
+    }
+    54% {
+      -webkit-transform: translateZ(-160px) rotateX(87deg);
+              transform: translateZ(-160px) rotateX(87deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(0) rotateX(0);
+              transform: translateZ(0) rotateX(0);
+    }
+  }
+  @keyframes slit-in-horizontal {
+    0% {
+      -webkit-transform: translateZ(-800px) rotateX(90deg);
+              transform: translateZ(-800px) rotateX(90deg);
+      opacity: 0;
+    }
+    54% {
+      -webkit-transform: translateZ(-160px) rotateX(87deg);
+              transform: translateZ(-160px) rotateX(87deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(0) rotateX(0);
+              transform: translateZ(0) rotateX(0);
+    }
+  }
+  
+/* slit end*/
