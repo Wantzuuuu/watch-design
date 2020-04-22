@@ -6,6 +6,10 @@ setTimeout(function () {
     }, 200)
 }, 300)
 // navbar
+$(".nav-bars").click(() => {
+    console.log("anan")
+    $(".toggle-block").slideToggle(500);
+})
 // let lastScroll = 0;
 // $(window).scroll(() => {
 //     let nowScroll = $(window).scrollTop();
@@ -95,11 +99,11 @@ $(window).scroll(() => {
     // amimate
     if (scroll > fourSection - 100) {
         $(".product-advance-container").addClass("i-fix");
-        $(".product-advance-container").addClass("slit-in-horizontal");
+        // $(".product-advance-container").addClass("slit-in-horizontal");
     }
     if (scroll > fiveSection - 100) {
         $(".glass-container").addClass("i-fix");
-        $(".glass-container").addClass("slit-in-horizontal");
+        // $(".glass-container").addClass("slit-in-horizontal");
     }
     // amimate end
 })
