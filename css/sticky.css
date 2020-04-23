@@ -292,6 +292,8 @@
 
 @media (max-width: 576px) {
   .product-advance-content .product-advance-container {
+    top: 0;
+    opacity: 1;
     max-width: 90%; }
     .product-advance-content .product-advance-container .product-img {
       height: 300px; } }
@@ -375,6 +377,8 @@
   .glass-section {
     height: 100vh; }
     .glass-section .glass-container {
+      top: 0;
+      opacity: 1;
       padding: 0 10px;
       max-width: 95%;
       height: 93%;

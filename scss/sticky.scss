@@ -378,6 +378,8 @@ $second-bg:rgb(36, 35, 35);
 @media(max-width:576px){
     .product-advance-content{
         .product-advance-container{
+            top:0;
+            opacity:1;
             max-width:90%;
             .product-img{
                 height:300px;
@@ -488,6 +490,8 @@ $second-bg:rgb(36, 35, 35);
     .glass-section{
         height:100vh;
         .glass-container{
+            top:0;
+            opacity:1;
             padding:0 10px;
             max-width:95%;
             height:93%;

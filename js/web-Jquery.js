@@ -31,24 +31,32 @@ console.log(threeSection);
 console.log(fourSection);
 console.log(fiveSection);
 console.log(menSection);
+setTimeout(function () {
+    $("#threeSection").addClass("advance-sticky");
+    $("#fourSection").addClass("advance-sticky");
+    $("#fiveSection").addClass("advance-sticky");
+    $("#men").addClass("advance-sticky");
+}, 100)
 $(window).scroll(() => {
     let scroll = $(window).scrollTop();
     // console.log(scroll);
     if (scroll > headerContentTarget - 50) {
         $(".content-box").addClass("i-fix");
     }
-    if (scroll > threeSection - 1000) {
-        $("#threeSection").addClass("advance-sticky");
-    }
-    if (scroll > fourSection - 1000) {
-        $("#fourSection").addClass("advance-sticky");
-    }
-    if (scroll > fiveSection - 1000) {
-        $("#fiveSection").addClass("advance-sticky");
-    }
-    if (scroll > menSection - 1000) {
-        $("#men").addClass("advance-sticky");
-    }
+    // change position
+    // if (scroll > threeSection - 1000) {
+    //     $("#threeSection").addClass("advance-sticky");
+    // }
+    // if (scroll > fourSection - 1000) {
+    //     $("#fourSection").addClass("advance-sticky");
+    // }
+    // if (scroll > fiveSection - 1000) {
+    //     $("#fiveSection").addClass("advance-sticky");
+    // }
+    // if (scroll > menSection - 1000) {
+    //     $("#men").addClass("advance-sticky");
+    // }
+    // change position
     if (scroll > (target - 500)) {
         $("#men").addClass("i-fix");
     } else {
