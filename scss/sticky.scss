@@ -448,8 +448,8 @@ $second-bg:rgb(36, 35, 35);
             // justify-content: center;
             .item{
                 position:relative;
-                padding:0 4%;
-                width:46%;
+                padding:0 3%;
+                width:47%;
                 .item-num{
                     position:absolute;
                     bottom:-23px;
@@ -510,12 +510,12 @@ $second-bg:rgb(36, 35, 35);
             .product-detail{
                 justify-content: center;
                 .item{
-                    width:50%;
+                    width:47%;
                     .item-num{
                         bottom:176px;
                         left:-12px;
                     }
-                    padding:5% 1%;
+                    padding:6% 2%;
                     img{
                         height:180px
                     }
@@ -578,6 +578,7 @@ $second-bg:rgb(36, 35, 35);
 }
 @media(max-width:576px){
     .men-content{
+        top:-55px;
         height:100vh;
         .men-container{
             max-width: 90%;
